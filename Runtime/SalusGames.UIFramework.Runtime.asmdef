@@ -1,0 +1,14 @@
+{
+    "name": "SalusGames.UIFramework.Runtime",
+    "rootNamespace": "SalusGames.UIFramework",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
