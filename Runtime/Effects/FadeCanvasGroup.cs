@@ -18,9 +18,9 @@ namespace SalusGames.UIFramework.Effects
             _canvasGroup.alpha = Mathf.MoveTowards(_canvasGroup.alpha, DesiredAlpha, 0.5f * Time.deltaTime);
         }
 
-        public void SetDesiredAlpha(float desiredAlpha)
+        public void SetDesiredAlpha(float value)
         {
-            DesiredAlpha = desiredAlpha;
+            desiredAlpha = value;
         }
     }
 }
