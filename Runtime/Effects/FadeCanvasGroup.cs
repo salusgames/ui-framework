@@ -6,7 +6,7 @@ namespace SalusGames.UIFramework.Effects
     public class FadeCanvasGroup : MonoBehaviour
     {
         private CanvasGroup _canvasGroup;
-        public float DesiredAlpha;
+        [SerializeField] private float desiredAlpha;
 
         private void Awake()
         {
@@ -16,6 +16,11 @@ namespace SalusGames.UIFramework.Effects
         private void Update()
         {
             _canvasGroup.alpha = Mathf.MoveTowards(_canvasGroup.alpha, DesiredAlpha, 0.5f * Time.deltaTime);
+        }
+
+        public void SetDesiredAlpha(float desiredAlpha)
+        {
+            DesiredAlpha = desiredAlpha;
         }
     }
 }
