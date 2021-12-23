@@ -7,6 +7,7 @@ namespace SalusGames.UIFramework.Effects
     {
         private CanvasGroup _canvasGroup;
         [SerializeField] private float desiredAlpha;
+		[SerializeField] private float fadeSpeed = 0.5f;
 
         private void Awake()
         {
@@ -15,7 +16,7 @@ namespace SalusGames.UIFramework.Effects
 
         private void Update()
         {
-            _canvasGroup.alpha = Mathf.MoveTowards(_canvasGroup.alpha, desiredAlpha, 0.5f * Time.deltaTime);
+            _canvasGroup.alpha = Mathf.MoveTowards(_canvasGroup.alpha, desiredAlpha, fadeSpeed * Time.deltaTime);
         }
 
         public void SetDesiredAlpha(float value)
